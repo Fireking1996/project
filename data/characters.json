@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Elarion Windstrider",
+    "race": "Elf",
+    "role": "Arcane Seeker",
+    "affiliation": "Order of the Prism",
+    "description": "A gifted elven mage obsessed with uncovering the secrets of the lost Starsong Ruins.",
+    "image": "images/characters/elarion.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kael Thornbrand",
+    "race": "Human",
+    "role": "Blade-for-Hire",
+    "affiliation": "The Crimson Banner",
+    "description": "A mercenary with a dark past, now questioning his allegiance after finding a cursed relic.",
+    "image": "images/characters/kael.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Myrren of the Vale",
+    "race": "Fey",
+    "role": "Whisper Druid",
+    "affiliation": "Circle of Hollow Roots",
+    "description": "A mysterious druid who communes with ancient spirits and guards sacred groves.",
+    "image": "images/characters/myrren.jpg"
+  }
+]

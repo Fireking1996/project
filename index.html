@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dracollum: A world-building and fantasy writing assistant. Organize your lore, characters, timelines, and more." />
+  <title>Dracollum Dashboard</title>
+  
+  <!-- Bulma CSS Framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+
+  <!-- Font (for Cinzel Decorative) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero is-dark">
+    <div class="hero-body">
+      <h1 class="title is-2 has-text-warning has-text-weight-bold" style="font-family: 'Cinzel Decorative', serif;">Dracollum</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="is-flex is-flex-wrap-wrap is-align-items-center">
+          <li><a href="index.html" class="button is-warning is-light is-small m-1">Dashboard</a></li>
+          <li><a href="character.html" class="button is-dark is-small m-1">Characters</a></li>
+          <li><a href="lore.html" class="button is-dark is-small m-1">Lore</a></li>
+          <li><a href="timeline.html" class="button is-dark is-small m-1">Timeline</a></li>
+          <li><a href="map.html" class="button is-dark is-small m-1">Map</a></li>
+          <li><a href="project.html" class="button is-dark is-small m-1">Writing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="section">
+    <div class="container">
+     <h2 class="title is-4 has-text-centered mb-5">Welcome to Dracollum</h2>
+      <p class="has-text-centered mb-6">Craft your own worlds, build characters, track histories, and get inspired with fantasy-friendly tools.</p>
+
+      <div class="columns is-multiline" id="dashboard-cards">
+        <!-- Cards will be injected by JS -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer has-background-dark has-text-white-ter has-text-centered">
+    <p>&copy; 2025 Dracollum. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>

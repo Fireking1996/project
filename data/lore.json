@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "title": "The Sundering War",
+    "category": "History",
+    "summary": "A devastating war that shattered the continent into five fractured realms.",
+    "content": "The Sundering War began over a dispute between the Skybound Kingdoms and the Earthen Tribes..."
+  },
+  {
+    "id": 102,
+    "title": "The Ember Crystals",
+    "category": "Artifacts",
+    "summary": "Rare, glowing stones believed to hold the power of the first dragons.",
+    "content": "Ember Crystals are relics of the Dragonwake, formed in the molten veins of the world when the elder wyrms died."
+  },
+  {
+    "id": 103,
+    "title": "The Hollow Pact",
+    "category": "Myth & Religion",
+    "summary": "A forbidden agreement made with beings from the Void.",
+    "content": "Few dare speak of the Hollow Ones. Legends say those who make the Pact gain power but lose their identity."
+  }
+]
