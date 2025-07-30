@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fantasy name generator" />
+  <title>Dracollum | Name Generator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="styles/namegen.css" />
+  <script type="module" src="scripts/namegeninit.js" defer></script>
+</head>
+<body>
+    <header class="hero is-dark">
+    <div class="hero-body">
+      <h1 class="title is-2 has-text-warning has-text-weight-bold" style="font-family: 'Cinzel Decorative', serif;">Dracollum</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="is-flex is-flex-wrap-wrap is-align-items-center">
+          <li><a href="index.html" class="button is-warning is-light is-small m-1">Dashboard</a></li>
+          <li><a href="character.html" class="button is-dark is-small m-1">Characters</a></li>
+          <li><a href="namegen.html" class="button is-dark is-small m-1">Name Generator</a></li>
+          <li><a href="lore.html" class="button is-dark is-small m-1">Lore</a></li>
+          <li><a href="timeline.html" class="button is-dark is-small m-1">Timeline</a></li>
+          <li><a href="map.html" class="button is-dark is-small m-1">Map</a></li>
+          <li><a href="project.html" class="button is-dark is-small m-1">Writing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">🧝‍♂️ Name Generator</h1>
+
+      <div class="box">
+        <form id="nameGenForm">
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <div class="select">
+                <select name="category" required>
+                  <option value="human">Human</option>
+                  <option value="elf">Elf</option>
+                  <option value="orc">Orc</option>
+                  <option value="dwarf">Dwarf</option>
+                  <option value="dragon">Dragon</option>
+                </select>
+              </div>
+            </div>
+            <div class="control">
+              <div class="select">
+                <select name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="control">
+              <button class="button is-primary" type="submit">Generate</button>
+            </div>
+          </div>
+        </form>
+        <div id="nameResult" class="has-text-centered mt-4"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

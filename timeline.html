@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dracollum Timeline: Visualize your world’s history." />
+  <title>Dracollum | Timeline</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="styles/timeline.css" />
+  <script type="module" src="scripts/timelineinit.js" defer></script>
+</head>
+<body>
+  <header class="hero is-dark">
+    <div class="hero-body">
+      <h1 class="title is-2 has-text-warning has-text-weight-bold" style="font-family: 'Cinzel Decorative', serif;">Dracollum</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="is-flex is-flex-wrap-wrap is-align-items-center">
+          <li><a href="index.html" class="button is-warning is-light is-small m-1">Dashboard</a></li>
+          <li><a href="character.html" class="button is-dark is-small m-1">Characters</a></li>
+                    <li><a href="namegen.html" class="button is-dark is-small m-1">Name Generator</a></li>
+          <li><a href="lore.html" class="button is-dark is-small m-1">Lore</a></li>
+          <li><a href="timeline.html" class="button is-dark is-small m-1">Timeline</a></li>
+          <li><a href="map.html" class="button is-dark is-small m-1">Map</a></li>
+          <li><a href="project.html" class="button is-dark is-small m-1">Writing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">🗺️ Timeline Builder</h1>
+
+      <form id="timelineForm" class="box mb-5">
+        <div class="field">
+          <label class="label">Title</label>
+          <input class="input" name="title" type="text" required />
+        </div>
+        <div class="field">
+          <label class="label">Date</label>
+          <input class="input" name="date" type="text" placeholder="e.g. Year 1034" required />
+        </div>
+        <div class="field">
+          <label class="label">Category</label>
+          <div class="select">
+            <select name="category">
+              <option>War</option>
+              <option>Discovery</option>
+              <option>Birth</option>
+              <option>Death</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Description</label>
+          <textarea class="textarea" name="description" required></textarea>
+        </div>
+        <button class="button is-primary" type="submit">Add Event</button>
+      </form>
+
+      <div id="timelineVisual" class="timeline is-centered">
+        <!-- Timeline items injected here -->
+      </div>
+    </div>
+  </section>
+</body>
+</html>
